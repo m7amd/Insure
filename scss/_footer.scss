@@ -1,0 +1,58 @@
+.footer {
+  overflow: hidden;
+  padding: 40px 0;
+  background-color: $VeryLightGray;
+  position: relative;
+  background-image: url('../images/bg-pattern-footer-desktop.svg');
+  background-position: top left;
+  background-repeat: no-repeat;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .social {
+
+      i {
+        font-size: 25px;
+        color: $DarkGrayishViolet;
+        margin-left: 7px;
+        cursor: pointer;
+        transition: 100ms ease-in-out;
+        &:hover {
+          color: $DarkViolet;
+        }
+      }
+    }
+  }
+  hr {
+    border: 1px solid #e2e0e0;
+  }
+
+  .content-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 50px;
+
+    .links {
+      text-transform: uppercase;
+      h2 {
+        margin-bottom: 40px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: $DarkGrayishViolet;
+      }
+      a {
+        display: block;
+        color: $DarkViolet;
+        margin-bottom: 22px;
+        font-size: 14px;
+        font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
